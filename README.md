@@ -1,6 +1,7 @@
 # kiem-thu-1
 BIT220037- Vũ Quang Dũng
-Mô tả bài tập kiểm thử đơn vị với Java
+
+Mô tả bài tập kiểm thử đơn vị với Java:
 
 Trong bài toán kiểm thử này, chúng ta sẽ kiểm thử các phương thức cơ bản của lớp Calculator để đảm bảo rằng các phép toán được thực hiện đúng đắn. Cụ thể, các phép toán sẽ bao gồm cộng, trừ, nhân, chia và một số tình huống đặc biệt như chia cho 0, cộng với số âm, và kiểm tra trường hợp tràn số.
 
@@ -36,4 +37,5 @@ Test 1: Kiểm tra tính toán liên kết giữa phép cộng và phép nhân (
 Ảnh chụp kết quả kiểm thử:
 <img width="960" alt="anh kiem thu" src="https://github.com/user-attachments/assets/1491bf08-ad31-4f96-988b-b3f613b0d70b" />
 
-
+Liên kết chatgpt:
+https://chatgpt.com/share/677baff7-0c80-800b-86d4-e13bcbafaf5b
