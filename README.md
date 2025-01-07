@@ -32,3 +32,8 @@ Test 3: Kiểm tra chia cho 0 để xác nhận trường hợp ngoại lệ (di
 Test 1: Kiểm tra trường hợp tràn số khi cộng với số lớn (add(Integer.MAX_VALUE, 1)).
 2.6. Kiểm thử tính toán liên kết (Integration Test)
 Test 1: Kiểm tra tính toán liên kết giữa phép cộng và phép nhân (add(2, 3) rồi nhân với 2).
+
+Ảnh chụp kết quả kiểm thử:
+<img width="960" alt="anh kiem thu" src="https://github.com/user-attachments/assets/1491bf08-ad31-4f96-988b-b3f613b0d70b" />
+
+
