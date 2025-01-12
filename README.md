@@ -3,62 +3,49 @@ BIT220037- Vũ Quang Dũng
 
 Mô tả bài tập kiểm thử đơn vị với Java:
 
-Trong bài toán kiểm thử này, chúng ta sẽ kiểm thử các phương thức cơ bản của lớp Calculator để đảm bảo rằng các phép toán được thực hiện đúng đắn. Cụ thể, các phép toán sẽ bao gồm cộng, trừ, nhân, chia và một số tình huống đặc biệt như chia cho 0, cộng với số âm, và kiểm tra trường hợp tràn số.
+Lớp Calculator
+Lớp này cung cấp các phương thức thực hiện các phép toán cơ bản:
 
-1. Phạm vi của bài toán
+add(double a, double b): Phép cộng hai số.
+subtract(double a, double b): Phép trừ hai số.
+multiply(double a, double b): Phép nhân hai số.
+divide(double a, double b): Phép chia hai số, với điều kiện mẫu số phải khác 0.
+Nếu mẫu số bằng 0, phương thức divide sẽ ném ra ngoại lệ IllegalArgumentException.
 
-Bài toán kiểm thử sẽ tập trung vào việc kiểm tra các chức năng sau:
+Lớp kiểm thử CalculatorTest
+Lớp kiểm thử này sử dụng các phương thức của JUnit 5 để kiểm tra từng phương thức của lớp Calculator. Các phần chính:
 
-Phép cộng: add(int a, int b)
+Kiểm thử phương thức add:
 
-Phép trừ: subtract(int a, int b)
+Kiểm tra các trường hợp tổng quát như cộng số dương, âm, 0.
+Đảm bảo kết quả phép cộng là chính xác.
+Kiểm thử phương thức subtract:
 
-Phép nhân: multiply(int a, int b)
+Tương tự như phép cộng, kiểm tra các trường hợp phổ biến với số dương, âm và 0.
+Kiểm thử phương thức multiply:
 
-Phép chia: divide(int a, int b)
+Kiểm tra các trường hợp số nhân, bao gồm cả số âm và 0.
+Đảm bảo nhân với 0 luôn trả về 0.
+Kiểm thử phương thức divide:
 
-2. Các tình huống kiểm thử
+Kiểm tra chia thông thường, chia số âm, chia với 0 ở tử số.
+Xác minh rằng chia cho 0 (mẫu số) ném ngoại lệ IllegalArgumentException.
+Kiểm thử tích hợp (testAdditionAndMultiplicationIntegration):
 
-Các tình huống kiểm thử (test cases) sẽ kiểm tra các trường hợp sau:
-
-2.1. Kiểm thử phép cộng
-
-Test 1: Kiểm tra phép cộng đơn giản với các số dương (add(2, 3)).
-
-Test 2: Kiểm tra phép cộng với một số âm (add(-2, 1)).
-
-Test 3: Kiểm tra phép cộng với các số lớn (add(1000000000, 1000000000)).
-
-2.2. Kiểm thử phép trừ
-
-Test 1: Kiểm tra phép trừ đơn giản với các số dương (subtract(3, 2)).
-
-Test 2: Kiểm tra phép trừ với các số âm (subtract(-2, -1)).
-
-2.3. Kiểm thử phép nhân
-
-Test 1: Kiểm tra phép nhân với các số dương (multiply(2, 3)).
-
-Test 2: Kiểm tra phép nhân với một số 0 (multiply(0, 5)).
-
-2.4. Kiểm thử phép chia
-
-Test 1: Kiểm tra phép chia đơn giản với các số dương (divide(6, 3)).
-
-Test 2: Kiểm tra chia với tử số bằng 0 (divide(0, 5)).
-
-Test 3: Kiểm tra chia cho 0 để xác nhận trường hợp ngoại lệ (divide(6, 0)).
-
-2.5. Kiểm thử số lớn và tràn số
-
-Test 1: Kiểm tra trường hợp tràn số khi cộng với số lớn (add(Integer.MAX_VALUE, 1)).
-
-2.6. Kiểm thử tính toán liên kết (Integration Test)
-
-Test 1: Kiểm tra tính toán liên kết giữa phép cộng và phép nhân (add(2, 3) rồi nhân với 2).
+Kiểm tra tích hợp giữa hai phương thức add và multiply.
+Đảm bảo rằng kết quả của một phép tính (cộng) được sử dụng đúng trong phép tính khác (nhân).
+Cách thực hiện
+Để chạy bài kiểm thử, bạn cần có thư viện JUnit 5 trong dự án.
+Biên dịch và chạy các bài kiểm thử bằng cách sử dụng IDE như IntelliJ IDEA, Eclipse hoặc chạy trực tiếp bằng Maven/Gradle.
+Kết quả mong đợi
+Tất cả bài kiểm thử phải "pass" nếu các phương thức trong lớp Calculator hoạt động đúng.
+Các ngoại lệ (IllegalArgumentException) phải được ném ra chính xác khi chia cho 0.
+Ý nghĩa của bài tập
+Giúp nắm vững cách viết unit test với JUnit.
+Đảm bảo chất lượng mã bằng cách phát hiện lỗi trong quá trình phát triển.
+Khuyến khích kiểm thử cả những trường hợp biên và ngoại lệ.
 
 Ảnh chụp kết quả kiểm thử:
+![Screenshot (29)](https://github.com/user-attachments/assets/3b1aeebe-6f75-406d-9cd2-c434e7a48d83)
 
-<img width="960" alt="anh kiem thu" src="https://github.com/user-attachments/assets/1491bf08-ad31-4f96-988b-b3f613b0d70b" />
-
-Liên kết chatgpt: https://chatgpt.com/share/677baff7-0c80-800b-86d4-e13bcbafaf5b
+Liên kết chatgpt: 
