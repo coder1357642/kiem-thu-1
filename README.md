@@ -48,4 +48,3 @@ Khuyến khích kiểm thử cả những trường hợp biên và ngoại lệ
 Ảnh chụp kết quả kiểm thử:
 ![Screenshot (29)](https://github.com/user-attachments/assets/3b1aeebe-6f75-406d-9cd2-c434e7a48d83)
 
-Liên kết chatgpt: 
