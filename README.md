@@ -49,4 +49,4 @@ Khuyến khích kiểm thử cả những trường hợp biên và ngoại lệ
 ![Screenshot (29)](https://github.com/user-attachments/assets/3b1aeebe-6f75-406d-9cd2-c434e7a48d83)
 
 Liên kết chatgpt:
-https://chatgpt.com/c/67839aca-272c-800b-9910-f98236e9605d
+https://chatgpt.com/share/67839c68-e038-800b-a627-066edcc98e4b
